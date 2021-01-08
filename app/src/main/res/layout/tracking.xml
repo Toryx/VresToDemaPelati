@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/searchpara2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/et_bg"
+        android:ems="10"
+        android:hint="Κωδικός"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+
+    <ListView
+        android:id="@+id/sendlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendinfo"
+        android:layout_below="@+id/searchpara2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/sendinfo"
+        android:layout_width="386dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_bgclear"
+        android:text="Διάλεξε ένα δέμα"
+        android:lineSpacingExtra="-8sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

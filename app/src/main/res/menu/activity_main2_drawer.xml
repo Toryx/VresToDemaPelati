@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="Δρομολόγια"
+            />
+
+        <item
+            android:id="@+id/nav_tools"
+
+            android:icon="@android:drawable/stat_sys_upload"
+            android:title="Αποστολές Δεμάτων" />
+        <item
+            android:id="@+id/received"
+            android:icon="@android:drawable/stat_sys_download"
+            android:title="Παραλαβές Δεμάτων" />
+        <item
+            android:id="@+id/nav_prices"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="Χρεώσεις και Λοιπά" />
+    </group>
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+    <item android:title="Εξωτερικοί Σύνδεσμοι">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="Νέα" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Κοινή Χρήση" />
+        </menu>
+    </item>
+    </group>
+    <item
+        android:id="@+id/about"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="πληροφορίες εφαρμοφγης" />
+
+</menu>
